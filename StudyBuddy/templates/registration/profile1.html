@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+</head>
+<body>
+
+    {{request.user.is_authenticated}}
+    {%if request.user.is_authenticated%}
+        <p>Oh hey it worked</p>
+    {%else%}
+
+    {%endif%}
+</body>
+</html>
